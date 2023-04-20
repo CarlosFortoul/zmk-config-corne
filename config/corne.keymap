@@ -22,10 +22,10 @@
                         // | CTRL  |  Z  |  X  |  C   |  V  |  B  |                 |  N  |  M   |  ,  |  .  |  /  | Fn-L |
                         //                     | GUI  | LWR | ENT |                 | SPC | RSE  | ALT |
                         bindings = <
-                        &kp TAB              &kp Q    &kp W        &kp E              &kp R     &kp T      &kp Y     &kp U  &kp I     &kp O   &kp P    &mt BSPC ESC
-                        &mt LSHIFT CAPSLOCK  &kp A     &kp S       &kp D              &kp F     &kp G      &kp H     &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-                        &kp LCTRL            &kp Z     &kp X       &kp C              &kp V     &kp B      &kp N     &kp M  &kp COMMA &kp DOT &kp FSLH &to 3
-                                             &kp LGUI  &lt 1 BSPC  &mt LCTRL RET      &kp SPACE &lt 2 DEL  &kp RALT 
+                        &kp TAB              &kp Q    &kp W        &kp E              &kp R          &kp T      &kp Y     &kp U  &kp I     &kp O   &kp P    &mt BSPC ESC
+                        &mt LSHIFT CAPSLOCK  &kp A     &kp S       &kp D              &kp F          &kp G      &kp H     &kp J  &kp K     &kp L   &kp SEMI &kp SQT
+                        &kp LCTRL            &kp Z     &kp X       &kp C              &kp V          &kp B      &kp N     &kp M  &kp COMMA &kp DOT &kp FSLH &to 3
+                                             &kp LGUI  &lt 1 BSPC  &mt LCTRL RET      &mt RALT SPACE &lt 2 DEL  &kp RALT 
                         >;
                 };
 
@@ -36,12 +36,12 @@
                         // | GUI  |       |     |     |     |     |     |     |      |     |     |     | EP_TOG  |
                         //                      | GUI |     | ENT |     | SPC | HOME | END |
                         bindings = < 
-                        &kp TAB     &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6     &kp N7     &kp N8 &kp N9    &kp N0 &kp ESC
-                        &kp LSHFT   &trans       &trans       &trans       &trans       &trans         &kp LEFT   &kp DOWN   &kp UP &kp RIGHT &trans &rgb_ug RGB_OFF
+                        &kp TAB     &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6     &kp N7     &kp N8 &kp N9    &kp N0 &kp DEL
+                        &kp LSHFT   &trans       &trans       &trans       &trans       &trans         &kp LEFT   &kp DOWN   &kp UP &kp RIGHT &trans &trans
                         &kp LCTRL   &trans       &trans       &trans       &trans       &trans         &trans     &trans     &trans &trans    &trans &ext_power EP_ON
-                                                              &kp LGUI     &trans       &kp RET        &kp SPACE  &kp HOME   &kp END
-                        >;
-                };
+                                                              &kp LGUI     &kp BSPC     &kp RET        &kp SPACE  &kp HOME   &kp END
+                        >
+                }
  
                 symbols_layer {
                         // -----------------------------------------------------------------------------------------
@@ -66,7 +66,7 @@
                         bindings = <
                         &kp  TAB  &kp F1   &kp F2  &kp F3   &kp F4   &kp F5      &trans       &trans       &trans        &trans       &trans       &kp ESC
                         &kp LSHFT &kp F16  &kp F7  &kp F8   &kp F9   &kp F10     &trans       &trans       &trans        &trans       &trans         &bt BT_CLR
-                        &kp LCTRL &kp F11  &kp F12 &trans   &trans   &trans      &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2  &bt BT_SEL 3 &bt BT_SEL 4   &to 1
+                        &kp LCTRL &kp F11  &kp F12 &trans   &trans   &trans      &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2  &bt BT_SEL 3 &bt BT_SEL 4   &to 0
                                                   &kp LGUI  &to 1    &kp RET     &kp SPACE    &trans       &kp RALT
                         >;
                 };
